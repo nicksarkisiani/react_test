@@ -7,17 +7,6 @@ function App() {
     const [state, setState] = React.useState(5)
     const navigate = useNavigate();
 
-    const increment = () => {
-        setState(state + 1)
-    }
-
-    const decrement = () => {
-        setState(state - 1)
-    }
-
-    const onClickHandler = () => {
-        navigate("/home")
-    }
 
     const navigateFunction = (path) => {
         console.log('123')
