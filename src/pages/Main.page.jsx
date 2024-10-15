@@ -1,9 +1,11 @@
-import App from "../App";
+import {Outlet} from "react-router";
 
 const MainPage = () => {
     return (
         <div>
-          <App />
+            <Header/>
+            <Outlet/>
+            <Footer />
         </div>
     );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Button} from "@mui/material";
 import {useNavigate } from "react-router-dom";
 
@@ -24,28 +24,8 @@ function App() {
         navigate(path)
     }
 
-
     return (
         <>
-            <header>
-                <Button onClick={() => navigate("/home")}>home</Button>
-                <Button onClick={() => navigate("/123")}>home</Button>
-                <Button onClick={() => navigateFunction("/345")}>home</Button>
-
-            </header>
-            <div>
-                <img src={require("./assets/react.svg")} alt="react"/>
-            </div>
-            <div>
-                <Button color="error">Silamaze</Button>
-            </div>
-
-            <div>
-
-                <Button onClick={increment}>increment</Button>
-                {state}
-                <Button onClick={decrement}>decrement</Button>
-            </div>
 
         </>
     )
